@@ -1,0 +1,19 @@
+{
+  "name": "xterm-websocket-example",
+  "version": "1.0.0",
+  "description": "A simple example of xterm.js with websocket",
+  "scripts": {
+    "dev:client": "pnpm --prefix client dev",
+    "dev:server": "pnpm --prefix server dev",
+    "dev": "concurrently \"pnpm dev:client\" \"pnpm dev:server\""
+  },
+  "keywords": [
+    "xterm",
+    "websocket"
+  ],
+  "author": "devSaifur",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
