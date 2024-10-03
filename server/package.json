@@ -1,12 +1,16 @@
 {
-  "name": "server",
+  "name": "server-node",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "tsx watch src/index.ts"
   },
   "dependencies": {
-    "hono": "^4.6.3"
+    "@hono/node-server": "^1.13.1",
+    "@hono/node-ws": "^1.0.4",
+    "hono": "^4.6.3",
+    "node-pty": "^1.0.0"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1"
   }
 }
