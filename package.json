@@ -1,7 +1,7 @@
 {
-  "name": "xterm-websocket-example",
+  "name": "xterm-node-pty-websocket-example",
   "version": "1.0.0",
-  "description": "A simple example of xterm.js with websocket",
+  "description": "A simple example of xterm.js and node-pty with websocket",
   "scripts": {
     "dev:client": "pnpm --prefix client dev",
     "dev:server": "pnpm --prefix server dev",
@@ -11,6 +11,7 @@
     "xterm",
     "websocket",
     "terminal",
+    "pty",
     "node"
   ],
   "author": "devSaifur",

@@ -1,4 +1,5 @@
 import './style.css'
+import '@xterm/xterm/css/xterm.css'
 
 import { initTerminal } from './terminal.ts'
 
