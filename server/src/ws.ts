@@ -21,18 +21,18 @@ export const wsHandler = (c: Context): WSEvents | Promise<WSEvents> => ({
       ws.send(dataJson)
     })
   },
-  onMessage: (evt, ws) => {
+  onMessage: (evt) => {
     const data = JSON.parse(evt.data.toString())
     console.log(data)
     if (data.type === 'command') {
       term.write(data.data)
     }
   },
-  onClose: (evt, ws) => {
+  onClose: () => {
     console.log('Websocket connection closed')
     term.clear()
   },
-  onError: (evt, ws) => {
+  onError: () => {
     console.log('Websocket error')
     term.clear()
   },
